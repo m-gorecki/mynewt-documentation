@@ -69,6 +69,14 @@ your home directory.
     Installing skeleton in myproj...
     Project myproj successfully created.
 
+
+**Note**: If you're using Mynewt 1.10.0, there's a known bug, for which you
+have to use additional flag in order to create a new project:
+
+.. code-block:: console
+
+    $ newt new myproj --shallow 0
+
 The newt tool creates a project base directory name **myproj**. All newt
 tool commands are run from the project base directory. The newt tool
 populates this new project with a base skeleton of a new Apache Mynewt
